@@ -1,76 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
        <!-- En-tête de la page -->
        <meta charset="UTF-8">
        <link rel="stylesheet" href="style.css">
        <link rel="styesheet"  href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="fontawesome/css/all.css">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>BOOKI-OpenClassroom</title>
 </head>
 <body>
-    <div class="padding-10">
-        <nav class="navbar">
+    <nav class="padding-10">
+        <div class="flexbetween">
             <div>
-                <a href="#">
-                    <img class="logo" src="Images/ImagesBooki/logo/Booki.png" alt="Booki">
-                </a>
+                 <img class="logo" src="Images/ImagesBooki/logo/Booki.png" alt="Booki">
             </div>
-            <div class="navigation">
-                <div>
-                    <a href="#" class="active-link">Hébergements</a>
-                </div>
-                <div>
-                    <a href="#" class="link" >activités</a>
-                </div>
+           
+            <div class="sizeliens flexaround">
+                <div class="sizelien flexcentre bordernav"><a href="#" class="color-link1">Hébergements</a></div>
+
+                <div class="sizelien flexcentre"><a href="#" class="color-link2" >activités</a></div>
             </div>
-        </nav> 
+        </div> 
+    </nav>
+     <header>
+     <section>
         <div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <div>
-                <form>
-                    <label class="icon-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </label>
-                    <input type="text" placeholder="Marseille, France" name ="localisation">
-                    <button class="search-button">
-                        <span>Rechercher</span> 
-                    </button>
-                </form>
-            </div>
         </div>
+        
+        <div>
+                    <div class="flexcentre bordureSearch">
+                      <div class="backGrey flexcentre Mapsize"><i class="fa-solid fa-location-dot"></i></div>
+                    
+                      <div>
+                         <input class="recherche flexcentre bordureNone paddingSearch" type="search" value="Marseille, France"/>
+                      </div>
+                      <div class="backbleu flexcentre buttonSearch">Rechercher</div> 
+                    </div>
+        </div>
+           
+  
+
+          <!-- filtres -->
         <div class="flex align-items-center">
-            <h2 class="filter">Filtres</h2>
+            <h3 class="filter">Filtres</h3>
                 <div class="flex flex-wrap">
                     <div class="filter-card">
                         <i class="fa-solid fa-money-bill-wave"></i> 
-                        <span class="margin-5">Économique</span>
+                        <div class="margin-5">Économique</div>
                     </div>
                     <div class="filter-card">
                         <i class="fa-solid fa-child"></i>
-                        <span class="margin-5"> Familial</span>
+                        <div class="margin-5"> Familial</div>
                     </div>
                     <div class="filter-card">
                         <i class="fa-solid fa-heart"></i>
-                        <span class="margin-5"> Romantique</span>
+                        <div class="margin-5"> Romantique</div>
                     </div>
                     <div class="filter-card">
                         <i class="fa-solid fa-dog"></i> 
-                        <span class="margin-5"> Animaux autorisés</span> 
+                        <div class="margin-5"> Animaux autorisés</div> 
                     </div>
                 </div>
         </div>
+  
+          <!--Fin filtres -->
         <div>
-            <div class="fa-solid fa-circle-info"></i></div>
-            <span class="foryourinformation">Plus de 500 logements sont disponibles dans cette ville </span>
+            <div class="fa-solid fa-circle-info"></div>
+            <span class="foryourinformation">Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
+    </section>
+</header>
+          <!-- Hébergements à Marseille-->
+       
         <div class="flex flex-grow flex-wrap margin-top-5">
             <div class="accommodation">
                     <div>
-                        <h2>Hébergements à Marseille</h2>
+                        <h3>Hébergements à Marseille</h3>
                     </div>
                     <div class="flex space-around">
                         <div class="accommodation-card">
@@ -79,7 +91,7 @@
                                     <img class="image-accomodation" src="Images/ImagesBooki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo d'une chambre Auberge la cannebière">
                                 </a>
                                 <h3 class="accommodation-title">Auberge La cannebière</h3>
-                                <p class="accommodation-subtitle">Nuit à partir de 25€</p>
+                                <p class="accommodation-subtitle">Nuit à partir de 25<strong>€</strong></p>
                                 <div class="flex stars">
                                     <div>
                                         <i class="fa-solid fa-star "></i>
@@ -105,7 +117,7 @@
                                      <img class="image-accomodation" src="Images/ImagesBooki//hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel du port">
                                  </a>
                                  <h3 class="accommodation-title">Hôtel du port</h3>
-                                 <p class="accommodation-subtitle">Nuit à partir de 52€</p>
+                                 <p class="accommodation-subtitle">Nuit à partir de 52<strong>€</strong></p>
                                  <div class="flex stars">
                                      <div>
                                          <i class="fa-solid fa-star "></i>
@@ -131,7 +143,7 @@
                                      <img class="image-accomodation" src="Images/ImagesBooki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Les Mouettes">
                                  </a>
                                  <h3 class="accommodation-title">Hôtel Les mouettes</h3>
-                                 <p class="accommodation-subtitle">Nuit à partir de 76€</p>
+                                 <p class="accommodation-subtitle">Nuit à partir de 76<strong>€</strong></p>
                                  <div class="flex stars">
                                      <div>
                                          <i class="fa-solid fa-star "></i>
@@ -159,7 +171,7 @@
                                     <img class="image-accomodation" src="Images/ImagesBooki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel de la mer">
                                 </a>
                                 <h3 class="accommodation-title">Hôtel de la mer</h3>
-                                <p class="accommodation-subtitle">Nuit à partir de 46€</p>
+                                <p class="accommodation-subtitle">Nuit à partir de 46<strong>€</strong></p>
                                 <div class="flex stars">
                                     <div>
                                         <i class="fa-solid fa-star "></i>
@@ -182,10 +194,10 @@
                         <div class="accommodation-card">
                             <div>
                                  <a href="#">
-                                     <img class="image-accomodation"src="Images/ImagesBooki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Auberge Le Panier ">
+                                     <img class="image-accomodation" src="Images/ImagesBooki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Auberge Le Panier ">
                                  </a>
                                  <h3 class="accommodation-title">Auberge Le Panier</h3>
-                                 <p class="accommodation-subtitle">Nuit à partir de 23€</p>
+                                 <p class="accommodation-subtitle">Nuit à partir de 23<strong>€</strong></p>
                                  <div class="flex stars">
                                      <div>
                                          <i class="fa-solid fa-star "></i>
@@ -211,7 +223,7 @@
                                      <img class="image-accomodation" src="Images/ImagesBooki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Chez Amina ">
                                  </a>
                                  <h3 class="accommodation-title">Hôtel Chez Amina</h3>
-                                 <p class="accommodation-subtitle">Nuit à partir de 96€</p>
+                                 <p class="accommodation-subtitle">Nuit à partir de 96<strong>€</strong></p>
                                  <div class="flex stars">
                                      <div>
                                          <i class="fa-solid fa-star "></i>
@@ -232,22 +244,26 @@
                             </div>
                         </div>
                     </div>
-                   <p href="#" class="see-more">Afficher plus </a>
+            
+                   <p class="see-more">Afficher plus </p>
             </div>
+            <!-- Fin Hébergements à Marseille-->
+
+            <!-- section les plus populaires-->
             <div class="side-section margin-left-10 padding-20">
                 <div class="flex space-between align-items-center ">
                     <div>
-                        <h2>Les plus populaires</h2>
+                        <h3>Les plus populaires</h3>
                     </div>
                     <div>
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
                 </div>
                 <div class="card-side-section align-items-center">
-                    <img class="image-side-section" src="Images/ImagesBooki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Le soleil du matin"/>
+                    <img class="image-side-section" src="Images/ImagesBooki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Le soleil du matin">
                     <div>
                         <h3 class="accommodation-title">Hôtel Le soleil du matin</h3>
-                        <p class="accommodation-subtitle">Nuit à partir de <b>128€</b></p>
+                        <p class="accommodation-subtitle">Nuit à partir de 128<strong>€</strong></p>
                         <div class="flex stars">
                             <div>
                                 <i class="fa-solid fa-star"></i>
@@ -268,10 +284,10 @@
                     </div>
                 </div>
                 <div class="card-side-section  align-items-center">
-                    <img class="image-side-section"src="Images/ImagesBooki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Chambres d'hôtes Au coeur de l'eau  "/>
+                    <img class="image-side-section"src="Images/ImagesBooki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Chambres d'hôtes Au coeur de l'eau  ">
                     <div>
                         <h3 class="accommodation-title">Chambres d'hôtes Au coeur de l'eau</h3>
-                        <p class="accommodation-subtitle">Nuit à partir de <b>71€</b></p>
+                        <p class="accommodation-subtitle">Nuit à partir de 71<strong>€</strong></p>
                         <div class="flex stars">
                             <div>
                                 <i class="fa-solid fa-star"></i>
@@ -292,10 +308,10 @@
                     </div>
                 </div>
                 <div class="card-side-section  align-items-center">
-                    <img class="image-side-section" src="Images/ImagesBooki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Bleu et Blanc"/>
+                    <img class="image-side-section" src="Images/ImagesBooki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo d'une chambre de l'Hôtel Bleu et Blanc">
                     <div>
                         <h3 class="accommodation-title">Hôtel Bleu et Blanc</h3>
-                        <p class="accommodation-subtitle">Nuit à partir de <b>68€</b></p>
+                        <p class="accommodation-subtitle">Nuit à partir de s68<strong>€</strong></p>
                         <div class="flex stars">
                             <div>
                                 <i class="fa-solid fa-star"></i>
@@ -310,15 +326,18 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <div>
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star gray"></i>
                             </div>  
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+          <!-- Fin section les plus populaires-->
+
+          <!--  Section Activités à Marseille  -->
         <div class="padding-10">
-            <h2>Activités à Marseille</h2>
+            <h3>Activités à Marseille</h3>
             <div class="flex space-between">
                 <div class="activity-card">
                     <img class="image-activity" src="Images/ImagesBooki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du vieux port">
@@ -338,31 +357,37 @@
                 </div>
             </div>
         </div>
-        <footer class="flex space-around footer-section">
-                <div >
-                   <h3 class="footer-title">À propos</h3>
-                    <div class="footer-links">
-                        <div><a class="navigation-link" href="#">Fonctionnement du site</a></div>
-                        <div><a class="navigation-link" href="#">Conditions générales de vente</a></div>
-                        <div><a class="navigation-link" href="#">Données et confidentialité</a></div>
-                    </div>
+    </main>
+          <!-- Fin Section Activités à Marseille  -->
+          
+          <!-- DEBUT FOOTER-->
+        <footer>
+            <div class="footer backGrey flexaround">
+                <div class="margeBockFoot1 TailleBlocFoot">
+                   <h3>À propos</h3>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales de vente</p>
+                    <p>Données et confidentialité</p>
                 </div>
             
-                <div>
-                    <h3 class="footer-title">Nos hébergements</h3>
-                    <div class="footer-links">
-                        <div><a class="navigation-link" href="#">Charte qualité</a></div>
-                        <div><a class="navigation-link" href="#">Soumettre votre hôtel</a></div>
-                    </div>
+               
+                   
+                <div class="TailleBlocFoot">
+                <h3>Nos hébergements</h3>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
                 </div>
-                <div>
-                    <h3 class="footer-title">Assistance</h3>
-                    <div class="footer-links">
-                        <div><a class="navigation-link" href="#">Centre d’aide</a></div>
-                        <div><a class="navigation-link" href="#">Nous contacter</a></div>
-                    </div>
-               </div>
+               
+                
+                  
+                <div class="margeBockFoot3 TailleBlocFoot">
+                <h3>Assistance</h3>
+                <p>Centre d’aide</p>
+                <p>Nous contacter</p>
+                </div>
+            </div>
          </footer> 
-    </div>
+          <!-- FIN FOOTER -->
+    </main>
 </body>
 </html>
