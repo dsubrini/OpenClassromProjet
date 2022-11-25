@@ -1,5 +1,13 @@
+:root {
+--main-color-blue: #0065fc;
+--second-color-blue: #deebff;
+--third-color-grey: #d9d9d9;
+}
+
+
 html, body{
     font-family: 'Raleway', sans-serif;
+    margin: 0px 25px;
 }
 .flexcentre{
     display: flex;
@@ -13,7 +21,7 @@ html, body{
     align-items: center;
 }
 .sizeliens{
-width: 45%;
+    width: 100%;
 }
 .sizelien{
     width: 140px;
@@ -52,7 +60,7 @@ width: 45%;
     width: 400px;
     border-radius: 10px;
     border: 0.5px solid #F2F2F2;
-
+    height: 35px;
 }
 .bordureNone{
     border: none;
@@ -66,14 +74,14 @@ width: 45%;
 }
 
 .recherche{
-    height: 50px;
+    height: 35px;
     width: 230px;
     font-size: 18px;
     color: black;
     font-weight:bold;
 }
 .Mapsize{
-    height: 50px;
+    height: 35px;
     width: 50px;
     border-radius: 10px 0 0 10px;
 }
@@ -81,13 +89,13 @@ width: 45%;
 background-color: #F2F2F2;
 }
 .buttonSearch{
-    height: 50px;
+    height: 35px;
     width: 120px;
     color: #F2F2F2;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
-.buttonSearch :hover{
+.buttonSearch :hover {
     color: #0065FC;
     background-color: #F2F2F2;
 }
@@ -125,14 +133,15 @@ background-color: #F2F2F2;
     display: flex;
     align-items: center;
     border: 1px solid #D9D9D9;
-    border-radius: 15px;
-    padding: 5px;
+    border-radius: 30px;
+    padding: 15px;
     margin-left: 10px;
     margin-top: 5px;
+    gap: 10px;
 }
-.margin-5:hover {
-    margin-left: 5px ;
-    color:  #0065FC;
+.filter-card:hover {
+    
+    background-color: var(--second-color-blue);
 }
 .margin-left-10 {
     margin-left: 10px;
@@ -153,16 +162,14 @@ background-color: #F2F2F2;
 .accommodation {
     background: #F2F2F2;
     border-radius: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-right: 40px;
+    padding: 20px 45px;
     flex-grow: 1;
 }
 
 .image-accomodation {
-    width: 246px;
-    height: 124px;
+    width: 300px;
+    height: 150px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
@@ -175,7 +182,12 @@ background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin: 5px;
+    
+}
+.accommodation-card :hover{
+    cursor: pointer;
+    transform: scale(0.8);
+
 }
 
 .accommodation-title {
@@ -185,6 +197,7 @@ background-color: #F2F2F2;
     line-height: 19px;
     color: #000000;
     padding-left: 5px;
+    margin: 3px 0px;
 }
 .accommodation-subtitle {
     font-style: normal;
@@ -209,12 +222,13 @@ background-color: #F2F2F2;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    margin-top: 45px;
    
 }
 .side-section {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 420px;
+    width: 500px;
 }
 
 .card-side-section {
@@ -223,10 +237,17 @@ background-color: #F2F2F2;
     box-shadow: 2px;
     display: flex;
     margin-top: 10px;
+    margin-bottom: 40px;
+    height: 160px;
 }
+.card-side-section:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
 .image-side-section {
     width: 137px;
-    height: 144px;
+    height: 155px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
 }
@@ -234,6 +255,7 @@ background-color: #F2F2F2;
     border: 1px solid #FFFFFF;;
     border-radius: 15px;
     box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
+   
 }
 
 .activity-title {
@@ -246,7 +268,7 @@ background-color: #F2F2F2;
 }
 
 .image-activity {
-    width: 302px;
+    width: 400px;
     height: 444.51px;
     border-radius: 20px;
 }
@@ -266,17 +288,36 @@ background-color: #F2F2F2;
     margin-right: 15%;
 }
 
-
 .fa-solid{
  color: #0065FC;  
 }
 
-/***** Responsive Ordinateur *****/
+/***** Responsive *****/
 @media screen and (max-width:992px) {
-    
+.sizeliens .flexbetween{
+    margin-left: 35%;
 }
+.filter{
+    margin-bottom: 20px;
+}
+.accommodation-card{
+ display: flex;
+ flex-direction: column;
+}
+.accommodation-title{
+  min-height: 150px;
+}
+.footer{
+display: flex;
+flex-direction: column;
+
+height:auto;
+}
+}
+    
+
 @media screen and (max-width:768px){
-.footer-section{
+.footer{
 flex-direction: column;
 }
 }
